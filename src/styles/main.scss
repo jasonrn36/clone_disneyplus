@@ -1,5 +1,13 @@
-$bgcolor : red ;
+$cabecalho_color : rgb(255, 0, 0);
+$bgcolor: yellow;
 
 body {
     background-color: $bgcolor;
+}
+
+.cabecalho {
+    background-color: $cabecalho_color;
+    width: 400px;
+    height: 600px;
+
 }
