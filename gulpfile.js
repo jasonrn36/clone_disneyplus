@@ -15,8 +15,12 @@ function copiarJS() {
     .pipe(gulp.dest('dist/js'));
 }
 
+//  Tarefa assistir
+exports.watch = function() {
+    gulp.watch('./src/Estilos', gulp.series(Styles, copiarJS));
+}
 
 // AREA DE EXECUÇÃO OU EXPORTAÇÃO DA TAREFA
 exports.default = Styles; //Aqui deve ser digitado o nome da função
 // Tarefa em série: primeiro Sass, depois JS
-exports.build = gulp.series(Styles, copiarJS);
+//exports.build = gulp.series(Styles, copiarJS);
