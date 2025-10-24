@@ -1,10 +1,11 @@
-$bgcolor : green;
-$divColor : yellow;
+// reset da página
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$corDeFundo: #040714;
 
 body {
-    background-color: $bgcolor;
-}
-
-.cabecalho {
-    background-color: $divColor;
+    background-color: $corDeFundo;
 }
