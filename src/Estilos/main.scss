@@ -1,5 +1,5 @@
 //  Importação de arquivos
-@use    'hero';
+@use 'heroi';
 
 // reset da página
 * {
@@ -55,4 +55,8 @@ body {
     @include text(18px);
     color: $corTextoSecundario;
     text-decoration: underline;
+}
+
+h1 {
+    color: $corTextoSecundario;
 }
