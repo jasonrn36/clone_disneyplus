@@ -4,13 +4,52 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+//  cores do site
 $corDeFundo: #040714;
 $corDaDiv: green;
+$corTextoPrincipal: silver;
+$corTextoSecundario: #f9f9f9;
+
 
 body {
     background-color: $corDeFundo;
 }
 
-.cabecalho {
-    background-color: $corDaDiv;
+//  AREA DE CONFIGURAÇÃO DOS @MIXINS
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $corTextoPrincipal;
+}
+
+@mixin title($fontSize: 40px){
+    @include text($fontSize);
+    color: $corTextoSecundario;
+}
+
+//  AREA DAS CONFIGURAÇÃO DOS TEXTOS
+.text--big {
+    @include text(18px);
+    
+}
+.text {
+    @include text;
+}
+.text--small {
+    @include text(12px);
+}
+
+//  AREA DAS CONFIGURAÇÃO DOS TITULOS
+.title {
+    @include title(40px);
+}
+.tilte {
+    @include title(28px);
+}
+
+.link-text {
+    @include text(18px);
+    color: $corTextoSecundario;
+    text-decoration: underline;
 }
