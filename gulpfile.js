@@ -14,18 +14,9 @@ function copiarJS() {
     .pipe(gulp.dest('dist/js'));
 }
 
+exports.default = Styles;
+    exports.watch = function(){
+        gulp.watch('./src/Estilos/*.scss', gulp.parallel(Styles,copiarJS))
+        gulp.watch('./src/js/*.js', gulp.parallel(copiarJS))
 
-// Tarefa que assiste os arquivos separadamente
-function watchFiles() {
-  gulp.watch('./src/Estilos/*.scss', Styles);      // Só recompila SCSS quando necessário
-  gulp.watch('./src/js/**/*.js', copiarJS);        // Só copia JS quando necessário
-}
-
-//  Tarefa assistir
-exports.watch = function() {
-    gulp.watch('./', gulp.parallel(Styles, copiarJS));
-}
-
-// AREA DE EXECUÇÃO OU EXPORTAÇÃO DAS TAREFAS
-exports.default = gulp.series(Styles, copiarJS);           // Build completo
-exports.watch = gulp.series(exports.default, watchFiles);  // Build + Watch
+    }
