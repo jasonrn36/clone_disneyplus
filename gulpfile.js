@@ -1,6 +1,7 @@
 //  AREA DAS CONSTANTES
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass')); // ATENÇÃO O GULP-SASS E DEPOIS O SASS EXEMPLO (gulp-sass)  (sass)
+const imagemin = require('gulp-imagemin');
 
 //AREA DAS TAREFAS OU FUNÇÕES
 //  ESTA TAREFA CONVERTE SCSS EM CSS
@@ -14,9 +15,16 @@ function copiarJS() {
     .pipe(gulp.dest('dist/js'));
 }
 
-exports.default = Styles;
+function images() {
+    return gulp.src('./src/images/**/*').pipe(imagemin()).pipe(gulp.dest('./dist/images'))
+
+}
+
+//  EXECUÇÃO DAS TAREFAS
+exports.default = gulp.parallel(Styles,images);
     exports.watch = function(){
-        gulp.watch('./src/Estilos/*.scss', gulp.parallel(Styles,copiarJS))
+        gulp.watch('./src/Estilos/*.scss', gulp.parallel(Styles,copiarJS,images))
         gulp.watch('./src/js/*.js', gulp.parallel(copiarJS))
+            gulp.watch('./src/images/**/*', gulp.parallel(images))
 
     }
