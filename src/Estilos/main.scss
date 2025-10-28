@@ -1,10 +1,18 @@
-$bgcolor : green;
-$divColor : yellow;
+@use 'hero';
+@use './colors.scss';
 
-body {
-    background-color: $bgcolor;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.cabecalho {
-    background-color: $divColor;
+body {
+    background-color: colors.$corDeFundo;
+}
+
+.hero {
+    //ATENÇÃO PARA AS CONFIGURAÇÕES QUE ESTÃO NO _HERO
+    //background-image: url(https://srv-estaticos.vercel.app/hero_desktop.jpeg);
+    background-image: url(hero.$hero);
 }
