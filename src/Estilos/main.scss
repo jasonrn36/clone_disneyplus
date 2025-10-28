@@ -32,9 +32,10 @@ body {
 @mixin text--branco($FontSize: 16px) {
     font-size: $FontSize;
     line-height: $FontSize + 10px;
-    color: $corSecundaria;
+    color: $corDePrincipal;
 }
 
 .tittle--small {
     @include text--branco(16px);
 }
+

@@ -9,7 +9,7 @@
   background-size: 100% 75%;
   padding: 7vw;
   min-height: 80vw;
-  background-image: url("https://srv-estaticos.vercel.app/hero_desktop.jpeg");
+  background-image: url("/dist/Images/hero_desktop.jpeg");
 }
 .hero__content {
   max-width: 640px;
@@ -26,11 +26,11 @@ body {
 }
 
 .hero {
-  background-image: url("https://srv-estaticos.vercel.app/hero_desktop.jpeg");
+  background-image: url("/dist/Images/hero_desktop.jpeg");
 }
 
 .tittle--small {
   font-size: 16px;
   line-height: 26px;
-  color: #f9f9f9;
+  color: silver;
 }
