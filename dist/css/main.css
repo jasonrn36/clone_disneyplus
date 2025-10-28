@@ -1,10 +1,13 @@
 .hero {
+  z-index: 1;
   align-items: center;
   display: flex;
   position: relative;
+  top: -30px;
+  right: 5px;
   background-repeat: no-repeat;
   background-size: 100% 75%;
-  padding: 5.6vw;
+  padding: 7vw;
   min-height: 80vw;
   background-image: url("https://srv-estaticos.vercel.app/hero_desktop.jpeg");
 }

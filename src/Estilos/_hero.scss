@@ -1,12 +1,15 @@
 $hero: 'https://srv-estaticos.vercel.app/hero_desktop.jpeg';
 
 .hero {
+    z-index: 1;
     align-items: center;
     display: flex;
     position: relative;
+    top: -30px;
+    right: 5px;
     background-repeat: no-repeat;
     background-size: 100% 75%;
-    padding: 5.6vw;
+    padding: 7.0vw;
     min-height: 80vw; // ISSO CORTA A IMAGEM DE BAIXO PARA CIMA
     background-image: url($hero);
 }
