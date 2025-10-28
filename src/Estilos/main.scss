@@ -1,5 +1,11 @@
 @use 'hero';
-@use './colors.scss';
+
+// BANCO DE CORES EM SASS "scss"
+$corDeFundo: #040714;
+$corDePrincipal: silver;
+$corSecundaria: #f9f9f9;
+$corTeste: rgb(249, 10, 10);
+
 
 * {
     margin: 0;
@@ -8,11 +14,27 @@
 }
 
 body {
-    background-color: colors.$corDeFundo;
+    background-color: $corDeFundo;
 }
 
 .hero {
     //ATENÇÃO PARA AS CONFIGURAÇÕES QUE ESTÃO NO _HERO
     //background-image: url(https://srv-estaticos.vercel.app/hero_desktop.jpeg);
     background-image: url(hero.$hero);
+}
+
+@mixin text($FontSize: 16px) {
+    font-size: $FontSize;
+    line-height: $FontSize + 10px;
+    color: $corTeste;
+}
+
+@mixin text--branco($FontSize: 16px) {
+    font-size: $FontSize;
+    line-height: $FontSize + 10px;
+    color: $corSecundaria;
+}
+
+.tittle--small {
+    @include text--branco(16px);
 }

@@ -149,7 +149,8 @@
     "yargs-parser": "^20.2.9"
   },
   "scripts": {
-    "build": "gulp watch",
+    "dev": "gulp watch",
+    "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
