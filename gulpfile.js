@@ -1,31 +1,45 @@
 //  AREA DAS CONSTANTES
 const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass')); // ATENÇÃO O GULP-SASS E DEPOIS O SASS EXEMPLO (gulp-sass)  (sass)
+const sass = require('gulp-sass')(require('sass'));
+const { exec } = require('child_process');
 
-//AREA DAS TAREFAS OU FUNÇÕES
-//  ESTA TAREFA CONVERTE SCSS EM CSS
+//  TAREFA: Compilar SCSS
 function Styles() {
-    return gulp.src('./src/Estilos/*.scss').pipe(sass({outputStyle:'compressed'})).pipe(gulp.dest('./dist/css'))
-
-}
-// Tarefa para copiar JS
-function copiarJS() {
-    return gulp.src('src/js/**/*.js')
-    .pipe(gulp.dest('dist/js'));
+return gulp.src('./src/Estilos/*.scss')
+    .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(gulp.dest('./dist/css'));
 }
 
+//  TAREFA: Comprimir imagens com Sharp via compressor.js
+function compressImages(done) {
+exec('node ./src/js/compressor.js', (err, stdout, stderr) => {
+    if (err) {
+    console.error(`Erro: ${stderr}`);
+    } else {
+    console.log(stdout);
+    }
+    done();
+});
+}
 
-// Tarefa que assiste os arquivos separadamente
+const svgmin = require('gulp-svgmin');
+
+function compressSVGs() {
+return gulp.src('./src/Images/**/*.svg')
+    .pipe(svgmin())
+    .pipe(gulp.dest('./dist/images'));
+}
+
+
+
+
+//  TAREFA: Watch
 function watchFiles() {
-  gulp.watch('./src/Estilos/*.scss', Styles);      // Só recompila SCSS quando necessário
-  gulp.watch('./src/js/**/*.js', copiarJS);        // Só copia JS quando necessário
+    gulp.watch('./src/Estilos/*.scss', gulp.parallel(Styles));
+    gulp.watch('./src/Images/**/*.{jpg,jpeg,png,gif}', gulp.parallel(compressImages));
+    gulp.watch('./src/Images/**/*.svg', gulp.parallel(compressSVGs));
 }
 
-//  Tarefa assistir
-exports.watch = function() {
-    gulp.watch('./', gulp.parallel(Styles, copiarJS));
-}
-
-// AREA DE EXECUÇÃO OU EXPORTAÇÃO DAS TAREFAS
-exports.default = gulp.series(Styles, copiarJS);           // Build completo
-exports.watch = gulp.series(exports.default, watchFiles);  // Build + Watch
+//  EXPORTA AS TAREFAS
+exports.default = gulp.parallel(Styles, compressImages, compressSVGs);
+exports.watch = watchFiles;

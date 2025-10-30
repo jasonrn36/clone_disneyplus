@@ -1,7 +1,74 @@
-body {
-  background-color: rgb(255, 8, 0);
+.hero {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-repeat: no-repeat;
+  padding: 5.6vw;
+  min-height: 40vw;
+  background-image: url(../Images/hero_desktop.jpeg);
+  text-align: center;
+  background-color: red;
 }
 
-.cabecalho {
-  background-color: yellow;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #040714;
+}
+
+.hero {
+  padding: 20vw;
+  background-size: cover;
+  background-position: center;
+}
+
+.text--big {
+  font-size: 18px;
+  line-height: 28px;
+  color: silver;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 26px;
+  color: silver;
+}
+
+.text--small {
+  font-size: 12px;
+  line-height: 22px;
+  color: silver;
+}
+
+.title--big {
+  font-size: 44px;
+  line-height: 54px;
+  color: silver;
+  color: #f9f9f9;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 38px;
+  color: silver;
+  color: #f9f9f9;
+}
+
+.title--small {
+  font-size: 28px;
+  line-height: 38px;
+  color: silver;
+  color: #f9f9f9;
+}
+
+.link-text {
+  font-size: 18px;
+  line-height: 28px;
+  color: silver;
+  color: #f9f9f9;
+  text-decoration: underline;
 }
