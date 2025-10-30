@@ -1,9 +1,23 @@
 {
   "devDependencies": {
+<<<<<<< HEAD
     "grunt-contrib-imagemin": "^4.0.0",
+=======
+    "browser-sync": "^3.0.4",
+>>>>>>> 906746b2aef9916783a61baaba7577389d1df552
     "gulp": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.1.0",
     "gulp-sass": "^6.0.1",
+<<<<<<< HEAD
     "gulp-svgmin": "^4.1.0",
+=======
+    "gulp-shell": "^0.8.0",
+    "gulp-uglify": "^3.0.2",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-svgo": "^11.0.1",
+>>>>>>> 906746b2aef9916783a61baaba7577389d1df552
     "sass": "^1.93.2"
   },
   "name": "clone_disneyplus",
@@ -55,6 +69,7 @@
     "fs-mkdirp-stream": "^2.0.1",
     "function-bind": "^1.1.2",
     "get-caller-file": "^2.0.5",
+    "glob": "^7.2.3",
     "glob-parent": "^5.1.2",
     "glob-stream": "^8.0.3",
     "glob-watcher": "^6.0.0",

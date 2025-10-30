@@ -1,0 +1,27 @@
+//$hero: 'https://srv-estaticos.vercel.app/hero_desktop.jpeg';
+$hero: '/dist/Images/hero_desktop.jpeg';
+
+//$hero: '/dist/Images/fundo_rei_leao_celular.png';
+
+.hero {
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: -30px;
+    right: 5px;
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+    padding: 7.0vw;
+    min-height: 80vw; // ISSO CORTA A IMAGEM DE BAIXO PARA CIMA
+    background-image: url("#{$hero}");
+        
+        &__content {
+            max-width: 640px;
+        }
+        &__branding {
+            background-color: red;
+        }
+
+}
+
