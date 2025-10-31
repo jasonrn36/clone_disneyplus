@@ -23,7 +23,7 @@ arquivos.forEach(async (arquivo) => {
     try {
     if (extensao === '.jpg' || extensao === '.jpeg') {
         await sharp(arquivo)
-        .jpeg({ quality: 70 })
+        .jpeg({ quality: 75 })
         .toFile(destino);
     } else if (extensao === '.png') {
         await sharp(arquivo)
@@ -31,7 +31,7 @@ arquivos.forEach(async (arquivo) => {
         .toFile(destino);
     } else if (extensao === '.gif') {
         await sharp(arquivo)
-        .gif({ effort: 1 })
+        .gif({ effort: 3 })
         .toFile(destino);
     }
 

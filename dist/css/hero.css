@@ -9,3 +9,9 @@
   text-align: center;
   background-color: red;
 }
+.hero__content {
+  max-width: 320px;
+}
+.hero__branding {
+  background-color: red;
+}

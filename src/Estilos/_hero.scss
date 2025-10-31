@@ -4,23 +4,29 @@ $hero: '/dist/Images/hero_desktop.jpeg';
 //$hero: '/dist/Images/fundo_rei_leao_celular.png';
 
 .hero {
-    z-index: 1;
-    align-items: center;
+
     display: flex;
     position: relative;
     top: -30px;
-    right: 5px;
+    
     background-repeat: no-repeat;
-    background-size: 100% 75%;
+    background-size: 150% 150%;
     padding: 7.0vw;
-    min-height: 80vw; // ISSO CORTA A IMAGEM DE BAIXO PARA CIMA
+    min-height: 60vw; // ISSO CORTA A IMAGEM deixando meno dos lados e em cima
     background-image: url("#{$hero}");
-        
+    align-items: center;
+    background-position: center center;
+
+
+            
         &__content {
             max-width: 640px;
+           // background-color: green; // This for testing to function
         }
-        &__branding {
-            background-color: red;
+        &__content__branding {
+            max-width: 320px;
+            margin: 0 auto 38px;
+           // background-color: red; // This for testing to function
         }
 
 }

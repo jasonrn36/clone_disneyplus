@@ -18,7 +18,7 @@ body {
 
 .hero {
 
-    padding: 20vw;
+    padding: 5vw;
     background-size: cover;
     background-position: center;
 }
@@ -61,5 +61,5 @@ body {
     @include text(18px);
     color: $corTextoSecundaria;
     text-decoration: underline;
-    
+
 }
