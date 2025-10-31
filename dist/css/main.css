@@ -1,5 +1,5 @@
 .hero {
-<<<<<<< HEAD
+
   display: flex;
   position: relative;
   align-items: center;
@@ -9,22 +9,7 @@
   background-image: url(../Images/hero_desktop.jpeg);
   text-align: center;
   background-color: red;
-=======
-  z-index: 1;
-  align-items: center;
-  display: flex;
-  position: relative;
-  top: -30px;
-  right: 5px;
-  background-repeat: no-repeat;
-  background-size: 100% 75%;
-  padding: 7vw;
-  min-height: 80vw;
-  background-image: url("/dist/Images/hero_desktop.jpeg");
-}
-.hero__content {
-  max-width: 640px;
->>>>>>> 906746b2aef9916783a61baaba7577389d1df552
+
 }
 
 * {
@@ -38,7 +23,7 @@ body {
 }
 
 .hero {
-<<<<<<< HEAD
+
   padding: 20vw;
   background-size: cover;
   background-position: center;
@@ -89,13 +74,5 @@ body {
   color: silver;
   color: #f9f9f9;
   text-decoration: underline;
-=======
-  background-image: url("/dist/Images/hero_desktop.jpeg");
-}
-
-.tittle--small {
-  font-size: 16px;
-  line-height: 26px;
-  color: silver;
->>>>>>> 906746b2aef9916783a61baaba7577389d1df552
+  
 }

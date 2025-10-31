@@ -1,20 +1,11 @@
 @use 'hero';
-<<<<<<< HEAD
+
 // COLORS
 $corDeFundo: #040714;
 $corTextoPrincipal: silver;
 $corTextoSecundaria: #f9f9f9;
 
-=======
 
-// DATA BASE TO SASS "scss"
-$corDeFundo: #040714;
-$corDePrincipal: silver;
-$corSecundaria: #f9f9f9;
-$corTeste: rgb(249, 10, 10);
-
-
->>>>>>> 906746b2aef9916783a61baaba7577389d1df552
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +17,7 @@ body {
 }
 
 .hero {
-<<<<<<< HEAD
+
     padding: 20vw;
     background-size: cover;
     background-position: center;
@@ -70,52 +61,5 @@ body {
     @include text(18px);
     color: $corTextoSecundaria;
     text-decoration: underline;
+    
 }
-=======
-    //Note this configuration to Hero
-    //background-image: url(https://srv-estaticos.vercel.app/hero_desktop.jpeg);
-    background-image: url(hero.$hero);
-}
-
-//  MIXIN TEXT AREA
-@mixin text($FontSize: 16px) { // This is a mixin to all text
-    font-size: $FontSize;
-    line-height: $FontSize + 10px;
-    color: $corTeste;
-}
-.text--Big {//This is a text size big
-    @include text--branco(18px);
-}
-.text { // This is a text default
-    @include text;
-}
-
-.text--small { //This is a text small
-    @include text--branco(12px);
-}
-
-//  MIXIN TITLE AREA
-@mixin title($FontSize: 40px) {
-    @include text($FontSize);
-    color: $corSecundaria;
-}
-
-.tittle--Big {
-    @include title(44px);
-}
-.tittle {
-    @include title;
-}
-.tittle--small {
-    @include title(28)
-}
-
-// Links mixin area
-.link-text {
-    @include text(18px);
-    color: $corSecundaria;
-    text-decoration: underline;
-}
-
-
->>>>>>> 906746b2aef9916783a61baaba7577389d1df552
