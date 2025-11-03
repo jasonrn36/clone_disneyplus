@@ -1,14 +1,11 @@
 .hero {
   display: flex;
   position: relative;
-  top: -30px;
+  top: 80px;
   background-repeat: no-repeat;
-  background-size: 150% 150%;
-  padding: 7vw;
   min-height: 60vw;
   background-image: url("/dist/Images/hero_desktop.jpeg");
   align-items: center;
-  background-position: center center;
 }
 .hero__content {
   max-width: 640px;
@@ -29,7 +26,7 @@ body {
 }
 
 .hero {
-  padding: 5vw;
+  padding: 15vw;
   background-size: cover;
   background-position: center;
 }
