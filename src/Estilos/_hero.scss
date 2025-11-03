@@ -12,7 +12,6 @@ $hero: '/dist/Images/hero_desktop.jpeg';
     background-repeat: no-repeat;
     min-height: 50vw; // ISSO CORTA A IMAGEM deixando meno dos lados e em cima
     background-image: url("#{$hero}");
-    align-items: center;
 
 
 
@@ -24,27 +23,48 @@ $hero: '/dist/Images/hero_desktop.jpeg';
         &__content__branding {
             max-width: 320px;
             margin: 0 auto 38px;
-           // background-color: red; // This for testing to function
+
         }
         // Area de estilização dos combos
         &__content__combos { // Aqui é somente as ul e li
             display: flex;
             justify-content: space-between;
-            background-color: rgb(0, 102, 255);
+
         }
             &__item__combo { //    Aqui tenho o combo 01
                 width: calc(50% - 12px);
-                background-color: rgb(22, 208, 63);
-                img {
-                    max-width: 100px;
+
+                .img_combo01 {
+                    max-width: 50%;
                 }
-                button {
+                .img_combo02 {
+                    max-width: 81%;
+                }
+                
+                .Assine {
                     display: block;
                     width: 100%;
                     height: 60px;
                     color: colors.$corTextoSecundaria;
+                    background-color: #6421ff;
+                    border-radius: 9px;
+                    text-transform: uppercase;
+                    margin-top: 2vw;
+                    margin-bottom: 8px;
+
+                    cursor: pointer;
+                    transition: all 0.3s ease;
                 }
             }
+        .title--small {
+            margin-bottom: 38px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+
 
 }
 
