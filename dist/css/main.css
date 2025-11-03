@@ -3,7 +3,7 @@
   position: relative;
   top: 80px;
   background-repeat: no-repeat;
-  min-height: 60vw;
+  min-height: 50vw;
   background-image: url("/dist/Images/hero_desktop.jpeg");
   align-items: center;
 }
@@ -13,6 +13,24 @@
 .hero__content__branding {
   max-width: 320px;
   margin: 0 auto 38px;
+}
+.hero__content__combos {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 102, 255);
+}
+.hero__item__combo {
+  width: calc(50% - 12px);
+  background-color: rgb(22, 208, 63);
+}
+.hero__item__combo img {
+  max-width: 100px;
+}
+.hero__item__combo button {
+  display: block;
+  width: 100%;
+  height: 60px;
+  color: #f9f9f9;
 }
 
 * {
@@ -26,7 +44,6 @@ body {
 }
 
 .hero {
-  padding: 15vw;
   background-size: cover;
   background-position: center;
 }
