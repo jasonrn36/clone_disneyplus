@@ -29,6 +29,7 @@ $hero: '/dist/Images/hero_desktop.jpeg';
         &__content__combos { // Aqui é somente as ul e li
             display: flex;
             justify-content: space-between;
+            list-style: none;
 
         }
             &__item__combo { //    Aqui tenho o combo 01
@@ -51,6 +52,7 @@ $hero: '/dist/Images/hero_desktop.jpeg';
                     text-transform: uppercase;
                     margin-top: 2vw;
                     margin-bottom: 8px;
+                    border: 2px solid #442390;
 
                     cursor: pointer;
                     transition: all 0.3s ease;

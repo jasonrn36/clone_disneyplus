@@ -1,6 +1,13 @@
 @use 'hero';
 @use 'colors';
 
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/Avenir\ Next\ LT\ Pro\ Bold.otf);
+    font-weight: 700;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +23,7 @@ body {
     background-position: center;
     align-items: center;
     text-align: center;
-    margin: 0 35px;
+    margin: 0 auto;
 }
 
 

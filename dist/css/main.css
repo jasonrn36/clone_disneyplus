@@ -16,6 +16,7 @@
 .hero__content__combos {
   display: flex;
   justify-content: space-between;
+  list-style: none;
 }
 .hero__item__combo {
   width: calc(50% - 12px);
@@ -36,6 +37,7 @@
   text-transform: uppercase;
   margin-top: 2vw;
   margin-bottom: 8px;
+  border: 2px solid #442390;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -46,6 +48,11 @@
   margin-bottom: 20px;
 }
 
+@font-face {
+  font-family: Avenir;
+  src: url(../../assets/Avenir\ Next\ LT\ Pro\ Bold.otf);
+  font-weight: 700;
+}
 * {
   margin: 0;
   padding: 0;
@@ -61,7 +68,7 @@ body {
   background-position: center;
   align-items: center;
   text-align: center;
-  margin: 0 35px;
+  margin: 0 auto;
 }
 
 .text--big {
