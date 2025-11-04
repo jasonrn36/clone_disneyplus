@@ -1,13 +1,16 @@
 .hero {
   display: flex;
   position: relative;
-  top: 80px;
+  top: 30px;
   background-repeat: no-repeat;
   min-height: 50vw;
   background-image: url("/dist/Images/hero_desktop.jpeg");
 }
 .hero__content {
   max-width: 640px;
+  position: relative;
+  top: -40px;
+  margin: 0 40px;
 }
 .hero__content__branding {
   max-width: 320px;
