@@ -5,6 +5,12 @@
 @font-face {
     font-family: Avenir;
     src: url(../../assets/Avenir\ Next\ LT\ Pro\ Bold.otf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/Avenir\ Next\ LT\ Pro\ Bold.otf);
     font-weight: 700;
 }
 
@@ -16,6 +22,7 @@
 
 body {
     background-color: colors.$corDeFundo;
+    font-family: Avenir, sans-serif;
 }
 
 .hero {
