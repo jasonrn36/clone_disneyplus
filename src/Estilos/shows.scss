@@ -7,10 +7,15 @@
     padding: 2vw 5.6vw;
     &__list {
         margin-top: 44px;
-        display: grid;
+        display: none;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
         list-style: none;
+
+
+        &--is-active {
+        display: grid;
+        }
 
         &__item {
             img {

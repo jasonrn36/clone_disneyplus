@@ -63,10 +63,13 @@
 }
 .shows__list {
   margin-top: 44px;
-  display: grid;
+  display: none;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
   list-style: none;
+}
+.shows__list--is-active {
+  display: grid;
 }
 .shows__list__item img {
   max-width: 100%;
