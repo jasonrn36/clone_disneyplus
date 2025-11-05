@@ -37,8 +37,8 @@ return gulp.src('./src/Images/**/*.svg')
 //  TAREFA: Watch
 function watchFiles() {
     gulp.watch('./src/Estilos/*.scss', gulp.parallel(Styles));
-    gulp.watch('./src/Images/**/*.{jpg,jpeg,png,gif}', gulp.parallel(compressImages));
-    gulp.watch('./src/Images/**/*.svg', gulp.parallel(compressSVGs));
+    gulp.watch('./src/Images/**/**/*.{jpg,jpeg,png,gif}', gulp.parallel(compressImages));
+    gulp.watch('./src/Images/**/**/*.svg', gulp.parallel(compressSVGs));
 }
 
 //  EXPORTA AS TAREFAS

@@ -40,8 +40,16 @@
   text-transform: uppercase;
   margin-top: 2vw;
   margin-bottom: 8px;
+  transition: background-color 0.3s ease;
+  border: none;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+.hero__item__combo .Assine:hover {
+  background-color: #7940ff;
+}
+.hero__item__combo .Assine:active {
+  background-color: #a888f3;
 }
 .hero .title--small {
   margin-bottom: 38px;
