@@ -58,25 +58,52 @@
   margin-bottom: 20px;
 }
 
-@font-face {
-  font-family: Avenir;
-  src: url(../../assets/Avenir\ Next\ LT\ Pro\ Bold.otf);
-  font-weight: lighter;
+.shows {
+  padding: 2vw 5.6vw;
 }
+.shows__list {
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  list-style: none;
+}
+.shows__list__item img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+.shows__tabs {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.shows__tabs__button {
+  color: #f9f9f9;
+  font-size: 20px;
+  background: none;
+  border: none;
+  padding-bottom: 5px;
+  margin: 0 1vw;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.shows__tabs__button--is-active {
+  border-bottom: 5px solid #f9f9f9;
+}
+
 @font-face {
   font-family: Avenir;
-  src: url(../../assets/Avenir\ Next\ LT\ Pro\ Bold.otf);
-  font-weight: 700;
+  src: url(../../assets/Avenir\ Next\ LT\ Pro\.otf);
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Avenir, sans-serif;
 }
 
 body {
   background-color: #040714;
-  font-family: Avenir, sans-serif;
 }
 
 .hero {

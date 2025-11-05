@@ -1,28 +1,22 @@
 @use 'hero';
 @use 'colors';
-
-
-@font-face {
-    font-family: Avenir;
-    src: url(../../assets/Avenir\ Next\ LT\ Pro\ Bold.otf);
-    font-weight: lighter;
-}
+@use 'shows';
 
 @font-face {
     font-family: Avenir;
-    src: url(../../assets/Avenir\ Next\ LT\ Pro\ Bold.otf);
-    font-weight: 700;
+    src: url(../../assets/Avenir\ Next\ LT\ Pro\.otf);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Avenir, sans-serif;
 }
 
 body {
     background-color: colors.$corDeFundo;
-    font-family: Avenir, sans-serif;
+
 }
 
 .hero {
