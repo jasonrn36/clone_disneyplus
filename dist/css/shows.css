@@ -24,12 +24,13 @@
   color: #f9f9f9;
   font-size: 20px;
   background: none;
-  border: none;
   padding-bottom: 5px;
   margin: 0 1vw;
   text-transform: uppercase;
+  border: none;
+  border-bottom: 5px solid transparent;
   cursor: pointer;
 }
 .shows__tabs__button--is-active {
-  border-bottom: 5px solid #f9f9f9;
+  border-color: #f9f9f9;
 }
