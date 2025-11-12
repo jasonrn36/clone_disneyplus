@@ -1,4 +1,5 @@
 .shows {
+  align-items: center;
   padding: 2vw 5.6vw;
 }
 .shows__list {
