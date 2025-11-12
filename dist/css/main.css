@@ -95,6 +95,13 @@
   border-color: #f9f9f9;
 }
 
+.plans {
+  padding: 5.6vw;
+}
+.plans h2 {
+  text-align: center;
+}
+
 @font-face {
   font-family: Avenir;
   src: url(../../assets/Avenir\ Next\ LT\ Pro\.otf);

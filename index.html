@@ -15,13 +15,13 @@
     <section class="hero">
         <div class="hero__content">
             <h1 class="hero__content__branding">
-                <img src="./dist/Images/disneyplus.svg" alt="Disney Plus">
+                <img src="./dist/Images/disneyplus.svg" alt="Disney Plus Pagina inicial">
             </h1>
             <h3 class="title--small">
                 Aqui as melhores histórias em um só lugar.
             </h3>
             <p>
-                <a class="link-text" href="#">
+                <a class="link-text" href="#" title="Assinar o Disney mais">
                     Assinar o Disney+
                 </a><br>
                 <span class="text">
@@ -31,13 +31,13 @@
             <ul class="hero__content__combos">
                 <li class="hero__item__combo">
                     <img class="img_combo01" src="./dist/Images/logos/disney_star_plus.png" alt="Disney Plus e Star Plus para Assinar o combo Plus">
-                    <button class="Assine">Assine agora</button>
-                    <span class="text" alt="Quarenta e cinco e noventa por mês.">R$ 45,90/mês*</span>
+                    <button class="Assine" title="Plano de R$ 29,90">Assine agora</button>
+                    <span class="text" alt="Quarenta e cinco e noventa por mês.">R$ 29,90/mês*</span>
                 </li>
 
                 <li class="hero__item__combo">
                     <img class="img_combo02" src="./dist/Images/logos/disney_star_plus_starzplay.png" alt="Disney Plus e Star Plus para Assinar o combo Plus">
-                    <button class="Assine">Assine agora</button>
+                    <button class="Assine" title="Plano de R$ 45,90">Assine agora</button>
                     <span class="text" alt="Quarenta e cinco e noventa por mês.">R$ 45,90/mês*</span>
                 </li>
 
@@ -50,13 +50,13 @@
 
         <nav class="shows__tabs">
         <!-- Área dos botões data tab-->
-            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active" >
+            <button title="Arraste Três veses para A DIREITA para ver os conteúdos" data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active" >
                 Em breve
             </button>
-            <button data-tab-button="mais_populares" class="shows__tabs__button">
+            <button title="Arraste para ESQUERDA ou DIREITA paera ver outros conteúdos" data-tab-button="mais_populares" class="shows__tabs__button">
                 Mais Populares
             </button>
-            <button data-tab-button="mais_no_star" class="shows__tabs__button">
+            <button title="Arraste para A ESQUERDA para ver outros conteúdos" data-tab-button="mais_no_star" class="shows__tabs__button">
                 Mais no Star+
             </button>
         </nav>
@@ -132,8 +132,22 @@
             </li>
             
         </ul>
-
     </section>
+    <section class="plans">
+        <h2 class="tilte--big">Escolha seu plano</h2>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="./dist/Images/logos/disneyplus_underline.png" alt="Disney Plus Plano de R$ 27,90 por mês">
+                <strong class="title--small" title="plano de R$ 27,90">R$ 27,90*</strong>
+                <p>
+                    No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.
+                </p>
+                <button title="assime agora o plano de R$27,90 por mês">Assine agora</button>
+            </li>
+        </ul>
+    </section>
+
+
 
     <script src="./src/js/main.js"></script>
     
