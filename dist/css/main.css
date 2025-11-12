@@ -101,6 +101,17 @@
 .plans h2 {
   text-align: center;
 }
+.plans__list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.plans__list__item {
+  text-align: center;
+}
+.plans strong {
+  display: block;
+}
 
 @font-face {
   font-family: Avenir;
