@@ -138,22 +138,6 @@
   display: block;
 }
 
-.watch_anywhere {
-  padding: 5.6vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-.watch_anywhere img {
-  max-width: 100%;
-}
-.watch_anywhere__text__container {
-  padding: 0 2vw;
-}
-.watch_anywhere__text__container h2 {
-  margin-bottom: 24px;
-}
-
 @font-face {
   font-family: Avenir;
   src: url(../../assets/Avenir\ Next\ LT\ Pro\.otf);
@@ -258,4 +242,40 @@ body {
 
 .button:active {
   background-color: #a888f3;
+}
+
+.image__text__section {
+  padding: 5.6vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.image__text__section img {
+  max-width: 100%;
+}
+.image__text__section__text__container {
+  padding: 0 2vw;
+}
+.image__text__section__text__container h2 {
+  margin-bottom: 24px;
+}
+
+.image-text-section--image-full-width {
+  display: block;
+  position: absolute;
+}
+.image-text-section--image-full-width img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.image__text__container {
+  position: relative;
+  top: -33vw;
+  left: 50vw;
+  height: 100%;
+  width: calc(50% - 10vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

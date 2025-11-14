@@ -2,7 +2,7 @@
 @use 'colors';
 @use 'shows';
 @use 'plans';
-@use 'watch_anywhere';
+
 
 
 @font-face {
@@ -109,3 +109,46 @@ body {
                 .button:active {
                         background-color: #a888f3;
                 }
+
+    .image__text__section {
+        padding: 5.6vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+        }
+        
+
+        &__text__container {
+            padding: 0 2vw;
+
+            h2 {
+                margin-bottom: 24px;
+            }
+        }
+}
+
+
+.image-text-section--image-full-width {
+                display: block;
+            position: absolute;
+
+            img {
+                width: 100%;
+                margin: 0 auto;
+            }
+}
+
+    .image__text__container {
+            position: relative;
+            top: -33vw;
+            left: 50vw;
+            height: 100%;
+            width: calc(50% - 10vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
