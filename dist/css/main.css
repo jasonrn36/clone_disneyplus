@@ -65,6 +65,7 @@
 .shows {
   align-items: center;
   padding: 2vw 5.6vw;
+  min-height: 50vw;
 }
 .shows__list {
   margin-top: 44px;
@@ -111,10 +112,21 @@
   display: flex;
   justify-content: space-around;
   list-style: none;
+  margin-top: 50px;
 }
 .plans__list__item {
   text-align: center;
+  padding: 60px 44px 44px;
   max-width: 380px;
+  width: 100%;
+}
+.plans__list__item:nth-child(2) {
+  background-image: url(../Images/fundo_combo_plus.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.plans__list__item img {
+  height: 83px;
 }
 .plans__list {
   padding-bottom: 24px;
