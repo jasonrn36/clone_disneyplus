@@ -138,6 +138,14 @@
   display: block;
 }
 
+.available-devices {
+  background-color: red;
+  padding: 5.6vw;
+}
+.available-devices__list {
+  background-color: yellow;
+}
+
 @font-face {
   font-family: Avenir;
   src: url(../../assets/Avenir\ Next\ LT\ Pro\.otf);
