@@ -3,6 +3,7 @@
 @use 'shows';
 @use 'plans';
 @use 'available-devices';
+@use 'watch_anywhere';
 
 
 
@@ -111,17 +112,12 @@ body {
                         background-color: #a888f3;
                 }
 
-    .image__text__section {
+    .image-text-section {
         padding: 5.6vw;
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        background-color: green;
 
-        img {
-            max-width: 100%;
-        }
-        
 
         &__text__container {
             padding: 0 2vw;
@@ -130,26 +126,26 @@ body {
                 margin-bottom: 24px;
             }
         }
-}
+
+        img {
+            max-width: 100%;
+        }
+        
 
 
-.image-text-section--image-full-width {
+
+        &--image-full-width {
                 display: block;
-            position: absolute;
-            background-color: blue;
-
-
+                position: relative;
             img {
                 width: 100%;
-                margin: 0 auto;
-                
             }
-}
 
-    .image__text__container {
-            position: relative;
-            top: -33vw;
-            left: 50vw;
+            &__text_container{
+            z-index: 3;
+            position: absolute;
+            top: 0vw;
+            left: 50%;
             height: 100%;
             width: calc(50% - 10vw);
             display: flex;
@@ -157,4 +153,12 @@ body {
             justify-content: center;
 
         }
+
+    }
+
+
+}
+            
+
+
 
