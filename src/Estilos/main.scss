@@ -116,6 +116,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        background-color: green;
 
         img {
             max-width: 100%;
@@ -135,10 +136,13 @@ body {
 .image-text-section--image-full-width {
                 display: block;
             position: absolute;
+            background-color: blue;
+
 
             img {
                 width: 100%;
                 margin: 0 auto;
+                
             }
 }
 
@@ -151,5 +155,6 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
         }
 

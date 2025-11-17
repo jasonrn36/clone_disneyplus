@@ -257,6 +257,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  background-color: green;
 }
 .image__text__section img {
   max-width: 100%;
@@ -271,6 +272,7 @@ body {
 .image-text-section--image-full-width {
   display: block;
   position: absolute;
+  background-color: blue;
 }
 .image-text-section--image-full-width img {
   width: 100%;
