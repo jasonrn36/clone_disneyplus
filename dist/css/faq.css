@@ -1,0 +1,19 @@
+.faq {
+  padding: 5.6vw;
+  background-color: red;
+}
+.faq h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.faq__menu--questions {
+  background-color: blue;
+  padding: 16px;
+}
+.faq__menu--questions__item {
+  background-color: #13151d;
+}
+.faq__menu--questions__item--menu__question {
+  color: #f9f9f9;
+  background-color: green;
+}

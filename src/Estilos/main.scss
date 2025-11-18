@@ -4,6 +4,7 @@
 @use 'plans';
 @use 'available-devices';
 @use 'watch_anywhere';
+@use 'faq';
 
 
 
@@ -42,16 +43,16 @@ body {
 
 .text--big {
     @include text(18px);
-        padding-bottom: 16px;
+
 }
 .text {
     @include text;
-    padding-bottom: 16px;
+
 }
 .text--small{
     @include text(12px);
-    padding-bottom: 24px;
 
+    
 }
 
 @mixin title($FontSize: 28px) {
@@ -61,16 +62,16 @@ body {
 }
 .title--big {
     @include title(44px);
-        padding-bottom: 16px;
+
 }
 
 .title {
     @include title;
-    padding-bottom: 16px;
+
 }
 .title--small {
     @include title(28px);
-    padding-bottom: 16px;
+
 }
 
 .link-text {

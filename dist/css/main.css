@@ -184,6 +184,54 @@
   margin-bottom: 24px;
 }
 
+.faq {
+  padding: 5.6vw;
+  background-color: red;
+}
+.faq h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.faq__menu--questions {
+  background-color: blue;
+  padding: 16px;
+}
+.faq__menu--questions__item {
+  background-color: #13151d;
+  list-style: none;
+  margin-bottom: 16px;
+}
+.faq__menu--questions__item__question {
+  color: #f9f9f9;
+  font-size: 20px;
+  padding: 24px;
+  display: block;
+  cursor: pointer;
+}
+.faq__menu--questions__item__question::after {
+  content: "+";
+  position: relative;
+  top: -50px;
+  left: 83vw;
+  right: 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+.faq__menu--questions__item__answer {
+  color: #f9f9f9;
+  height: 0px;
+  overflow: hidden;
+}
+.faq__menu--questions__item__answer--is-open .faq__menu--questions__item__question::after {
+  content: "-";
+}
+.faq__menu--questions__item__answer--is-open .faq__menu--questions__item__answer {
+  height: auto;
+  padding: 24px;
+}
+
 @font-face {
   font-family: Avenir;
   src: url(../../assets/Avenir\ Next\ LT\ Pro\.otf);
@@ -209,21 +257,18 @@ body {
   font-size: 18px;
   line-height: 28px;
   color: silver;
-  padding-bottom: 16px;
 }
 
 .text {
   font-size: 16px;
   line-height: 26px;
   color: silver;
-  padding-bottom: 16px;
 }
 
 .text--small {
   font-size: 12px;
   line-height: 22px;
   color: silver;
-  padding-bottom: 24px;
 }
 
 .title--big {
@@ -231,7 +276,6 @@ body {
   line-height: 54px;
   color: silver;
   color: #f9f9f9;
-  padding-bottom: 16px;
 }
 
 .title {
@@ -239,7 +283,6 @@ body {
   line-height: 38px;
   color: silver;
   color: #f9f9f9;
-  padding-bottom: 16px;
 }
 
 .title--small {
@@ -247,7 +290,6 @@ body {
   line-height: 38px;
   color: silver;
   color: #f9f9f9;
-  padding-bottom: 16px;
 }
 
 .link-text {
