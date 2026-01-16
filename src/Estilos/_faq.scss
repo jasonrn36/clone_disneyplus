@@ -5,14 +5,11 @@
         margin-bottom: 24px;
     }
     &__questions {
-        max-width: 800px;
-        margin: 0 auto;
         list-style: none;
 
         &__item {
             background-color: #13151d;
             border-bottom: 1px solid #ccc;
-            padding: 16px 0;
 
             &__question {
                 color: #fff;
@@ -20,8 +17,24 @@
                 padding: 24px;
                 display: block;
                 cursor: pointer;
+                &::after {
+                    content: '+'; // pode adicionar um ícone ou texto aqui
+                    position: relative;
+                    top: 0;
+                    left: 90%;
+                    height: 100%;
+                    display:inline;
+                    align-items: center;
+                    font-size: 40px;
+                    justify-content: space-between;
+                    text-align: right;
+
+                }
             }
 
+            &__answer {
+                padding: 24px;
+            }
         }
     }
 }
