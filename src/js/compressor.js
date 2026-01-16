@@ -1,5 +1,4 @@
 const sharp = require('sharp');
-const path = require("path");
 const fs = require('fs-extra');
 const path = require('path');
 const glob = require('glob');
@@ -18,7 +17,7 @@ const arquivosSVG = glob.sync(`${pastaEntrada}/**/*.svg`);
 
 (async () => {
 if (arquivosRaster.length === 0 && arquivosSVG.length === 0) {
-    console.log('Nenhuma imagem encontrada para compressão.');
+    console.log('⚠️ Nenhuma imagem encontrada para compressão.');
     return;
 }
 
@@ -39,9 +38,9 @@ for (const arquivo of arquivosRaster) {
         await imagem.gif({ effort: 3 }).toFile(destino);
     }
 
-    console.log(`Imagem comprimida: ${arquivo} → ${destino}`);
+    console.log(`✅ Imagem comprimida: ${arquivo} → ${destino}`);
     } catch (erro) {
-    console.error(`Erro ao processar ${arquivo}:`, erro.message);
+    console.error(`❌ Erro ao processar ${arquivo}:`, erro.message);
     }
 }
 
@@ -55,11 +54,11 @@ for (const arquivo of arquivosSVG) {
     const resultado = optimize(conteudo, { path: arquivo });
 
     await fs.writeFile(destino, resultado.data, 'utf8');
-    console.log(`SVG otimizado: ${arquivo} → ${destino}`);
+    console.log(`✅ SVG otimizado: ${arquivo} → ${destino}`);
     } catch (erro) {
-    console.error(`Erro ao otimizar SVG ${arquivo}:`, erro.message);
+    console.error(`❌ Erro ao otimizar SVG ${arquivo}:`, erro.message);
     }
 }
 
-console.log('Compressão de imagens concluída com sucesso.');
+console.log('🎉 Compressão de imagens concluída com sucesso.');
 })();
