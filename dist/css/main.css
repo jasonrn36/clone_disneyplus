@@ -197,11 +197,12 @@
 .faq__questions__item {
   background-color: #13151d;
   border-bottom: 1px solid #ccc;
+  margin-bottom: 24px;
 }
 .faq__questions__item__question {
   color: #fff;
   font-size: 20px;
-  padding: 24px;
+  padding: 18px;
   display: block;
   cursor: pointer;
 }
@@ -218,7 +219,8 @@
   text-align: right;
 }
 .faq__questions__item__answer {
-  padding: 24px;
+  height: 0px;
+  overflow: hidden;
 }
 
 @font-face {

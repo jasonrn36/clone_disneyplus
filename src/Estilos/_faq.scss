@@ -10,11 +10,12 @@
         &__item {
             background-color: #13151d;
             border-bottom: 1px solid #ccc;
+            margin-bottom: 24px;
 
             &__question {
                 color: #fff;
                 font-size: 20px;
-                padding: 24px;
+                padding: 18px;
                 display: block;
                 cursor: pointer;
                 &::after {
@@ -33,7 +34,8 @@
             }
 
             &__answer {
-                padding: 24px;
+                height: 0px;
+                overflow: hidden;
             }
         }
     }
