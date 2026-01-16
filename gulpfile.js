@@ -31,9 +31,10 @@ return gulp.src('./src/Images/**/*.svg')
     .pipe(gulp.dest('./dist/images'));
 }
 
-
-
-
+function copyHTML() {
+    return gulp.src('./*.html')
+    .pipe(gulp.dest('./dist'));
+}
 //  TAREFA: Watch
 function watchFiles() {
     gulp.watch('./src/Estilos/*.scss', gulp.parallel(Styles));
@@ -42,5 +43,5 @@ function watchFiles() {
 }
 
 //  EXPORTA AS TAREFAS
-exports.default = gulp.parallel(Styles, compressImages, compressSVGs);
+exports.default = gulp.parallel(Styles, compressImages, compressSVGs, copyHTML);
 exports.watch = watchFiles;
