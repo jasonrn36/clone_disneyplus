@@ -156,12 +156,10 @@
   "scripts": {
     "dev": "gulp watch",
     "build": "gulp",
+    "outputDirectory": "dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
-  "build": {
-        "outputDirectory": "dist"
-    } 
+  "description": ""
 }
