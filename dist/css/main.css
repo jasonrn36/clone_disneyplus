@@ -222,6 +222,13 @@
   height: 0px;
   overflow: hidden;
 }
+.faq__questions__item--is-open .faq__questions__item__question::after {
+  content: "-";
+}
+.faq__questions__item--is-open .faq__questions__item__answer {
+  height: auto;
+  padding: 24px;
+}
 
 @font-face {
   font-family: Avenir;

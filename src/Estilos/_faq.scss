@@ -4,6 +4,7 @@
         text-align: center;
         margin-bottom: 24px;
     }
+
     &__questions {
         list-style: none;
 
@@ -37,8 +38,19 @@
                 height: 0px;
                 overflow: hidden;
             }
+
+            &--is-open {
+
+                .faq__questions__item__question::after {
+                    content: '-';
+                }
+
+                .faq__questions__item__answer {
+                    height: auto;
+                    padding: 24px;
+                }
         }
     }
 }
 
-
+}
