@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   padding: 10.5vw;
   min-height: 50vw;
-  background-image: url("/dist/Images/hero_desktop.jpeg");
+  background-image: url("https://srv-estaticos.vercel.app/hero_desktop.jpeg");
 }
 .hero__content {
   max-width: 640px;
