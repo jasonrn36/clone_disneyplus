@@ -1,0 +1,87 @@
+@use 'colors';  // PARA FAZER USO CAS CORES NO CARQUIVOS colors use explemplo: colors.$corPrincipal
+//$hero: 'https://srv-estaticos.vercel.app/hero_desktop.jpeg';
+$hero: '/dist/Images/hero_desktop.jpeg';
+
+//$hero: '/dist/Images/fundo_rei_leao_celular.png';
+
+.hero {
+
+    display: flex;
+    position: relative;
+    top: -10px;
+    background-repeat: no-repeat;
+    padding: 10.5vw;
+    min-height: 50vw; // ISSO CORTA A IMAGEM deixando meno dos lados e em cima
+    background-image: url("#{$hero}");
+
+
+
+
+        &__content {
+            max-width: 640px;
+            position: relative;
+            top: 0px;
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+            margin-left: -20px;
+        }
+        &__content__branding {
+            max-width: 300px;
+            margin: 0 auto;
+
+        }
+        // Area de estilização dos combos
+        &__content__combos { // Aqui é somente as ul e li
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+
+        }
+            &__item__combo { //    Aqui tenho o combo 01
+                width: calc(50% - 12px);
+
+                .img_combo01 {
+                    max-width: 50%;
+                }
+                .img_combo02 {
+                    max-width: 81%;
+                }
+                
+                .button {
+                    display: block;
+                    width: 100%;
+                    height: 60px;
+                    color: colors.$corTextoSecundaria;
+                    background-color: #6421ff;
+                    border-radius: 9px;
+                    text-transform: uppercase;
+                    margin-top: 2vw;
+                    margin-bottom: 8px;
+                    transition: background-color 0.3s ease;
+                    border: none;
+
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+
+                .button:hover {
+                        background-color: #7940ff;
+                }
+                .button:active {
+                        background-color: #a888f3;
+                }
+            }
+
+        .title--small {
+            margin-bottom: 38px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+
+
+}
+

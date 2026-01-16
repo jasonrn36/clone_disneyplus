@@ -1,0 +1,15 @@
+.watch_anywhere {
+  padding: 5.6vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.watch_anywhere img {
+  max-width: 100%;
+}
+.watch_anywhere__text__container {
+  padding: 0 2vw;
+}
+.watch_anywhere__text__container h2 {
+  margin-bottom: 24px;
+}
