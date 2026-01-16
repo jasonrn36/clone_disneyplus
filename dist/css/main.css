@@ -210,9 +210,9 @@
   content: "+";
   position: relative;
   top: 0;
-  left: 90%;
+  left: 95%;
   height: 100%;
-  display: inline;
+  display: flex;
   align-items: center;
   font-size: 40px;
   justify-content: space-between;
