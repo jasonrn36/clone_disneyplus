@@ -7,3 +7,6 @@
   max-width: 80px;
   width: 100%;
 }
+.header__links {
+  display: flex;
+}

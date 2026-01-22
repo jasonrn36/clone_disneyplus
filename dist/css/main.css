@@ -230,6 +230,18 @@
   padding: 24px;
 }
 
+.header__container {
+  padding: 8px 36px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  max-width: 80px;
+  width: 100%;
+}
+.header__links {
+  display: flex;
+}
 @font-face {
   font-family: Avenir;
   src: url(../../assets/Avenir\ Next\ LT\ Pro\.otf);
