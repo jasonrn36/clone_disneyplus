@@ -11,3 +11,7 @@
   display: flex;
   list-style: none;
 }
+.header__links__item {
+  margin: 5px;
+  text-decoration: none;
+}

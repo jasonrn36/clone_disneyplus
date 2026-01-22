@@ -58,12 +58,12 @@ $hero: 'https://srv-estaticos.vercel.app/hero_desktop.jpeg';
                     color: colors.$corTextoSecundaria;
                     background-color: #6421ff;
                     border-radius: 9px;
-                    text-transform: uppercase;
+                    text-transform: none;
                     transition: background-color 0.3s ease;
                     border: none;
-
                     cursor: pointer;
                     transition: all 0.3s ease;
+                    padding: 8px 14px;
                 }
 
                 .button:hover {

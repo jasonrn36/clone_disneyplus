@@ -7,6 +7,10 @@
   min-height: 50vw;
   background-image: url("https://srv-estaticos.vercel.app/hero_desktop.jpeg");
 }
+.hero .button {
+  margin-top: 2vw;
+  margin-bottom: 8px;
+}
 .hero__content {
   max-width: 640px;
   position: relative;
@@ -41,13 +45,12 @@
   color: #f9f9f9;
   background-color: #6421ff;
   border-radius: 9px;
-  text-transform: uppercase;
-  margin-top: 2vw;
-  margin-bottom: 8px;
+  text-transform: none;
   transition: background-color 0.3s ease;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  padding: 8px 14px;
 }
 .hero__item__combo .button:hover {
   background-color: #7940ff;
