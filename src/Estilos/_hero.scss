@@ -14,7 +14,10 @@ $hero: 'https://srv-estaticos.vercel.app/hero_desktop.jpeg';
     min-height: 50vw; // ISSO CORTA A IMAGEM deixando meno dos lados e em cima
     background-image: url("#{$hero}");
 
-
+    .button {
+        margin-top: 2vw;
+        margin-bottom: 8px;
+    }
 
 
         &__content {
@@ -56,8 +59,6 @@ $hero: 'https://srv-estaticos.vercel.app/hero_desktop.jpeg';
                     background-color: #6421ff;
                     border-radius: 9px;
                     text-transform: uppercase;
-                    margin-top: 2vw;
-                    margin-bottom: 8px;
                     transition: background-color 0.3s ease;
                     border: none;
 

@@ -241,6 +241,7 @@
 }
 .header__links {
   display: flex;
+  list-style: none;
 }
 @font-face {
   font-family: Avenir;
