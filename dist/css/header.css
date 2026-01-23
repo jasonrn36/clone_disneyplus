@@ -6,6 +6,7 @@
 .header__logo {
   max-width: 80px;
   width: 100%;
+  margin: 5px;
 }
 .header__links {
   display: flex;
@@ -16,4 +17,8 @@
 .header button {
   height: 50px;
   padding: 14px;
+}
+
+.hidden {
+  visibility: hidden;
 }
