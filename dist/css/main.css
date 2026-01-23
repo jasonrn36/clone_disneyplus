@@ -347,11 +347,11 @@ body {
 }
 
 .button:hover {
-  background-color: #7940ff;
+  background-color: transparent;
 }
 
 .button:active {
-  background-color: #a888f3;
+  background-color: #2e58ff;
 }
 
 .image-text-section {

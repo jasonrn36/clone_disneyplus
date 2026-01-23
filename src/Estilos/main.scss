@@ -97,7 +97,7 @@ body {
                     width: 100%;
                     height: 60px;
                     color: colors.$corTextoSecundaria;
-                    background-color: colors.$corDeFondoBotaoPrimario;
+                    background-color: colors.$corDeFundoBotaoPrimario;
                     border-radius: 9px;
                     text-transform: uppercase;
                     margin-top: 2vw;
@@ -113,10 +113,10 @@ body {
                 }
 
                 .button:hover {
-                        background-color: #7940ff;
+                        background-color: colors.$corDeFundoBotaoDark;
                 }
                 .button:active {
-                        background-color: #a888f3;
+                        background-color: colors.$corDeFundoBotaoSecundario;
                 }
 
     .image-text-section {
@@ -165,7 +165,3 @@ body {
 
 
 }
-            
-
-
-
