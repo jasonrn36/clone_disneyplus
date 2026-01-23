@@ -233,7 +233,18 @@
   padding: 24px;
 }
 
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: red;
+}
 .header__container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
   padding: 8px 36px;
   display: flex;
   justify-content: space-between;
