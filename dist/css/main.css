@@ -348,6 +348,7 @@ body {
 
 .button:hover {
   background-color: transparent;
+  border: solid 2px #fff;
 }
 
 .button:active {

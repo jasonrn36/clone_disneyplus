@@ -114,6 +114,7 @@ body {
 
                 .button:hover {
                         background-color: colors.$corDeFundoBotaoDark;
+                        border: solid 2px #fff;
                 }
                 .button:active {
                         background-color: colors.$corDeFundoBotaoSecundario;
