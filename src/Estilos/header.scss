@@ -5,6 +5,9 @@
     top: 0;
     left: 0;
     z-index: 10;
+    background-color: colors.$corDeFundo;
+    transition: background-color .5s ease;
+    align-items: center;
 
     &--is-hidden {
         background-color: transparent;
@@ -12,6 +15,8 @@
         .header__logo {
             opacity: 0;
             visibility: hidden;
+
+
         }
         .header__links__item:first-child {
             opacity: 0;
@@ -20,15 +25,17 @@
 }
 
     &__container {
-        padding: 8px 36px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin: 5px;
+        padding: 2px;
 
     }
     &__logo {
         max-width: 80px;
         width: 100%;
-        margin: 5px;
+        transition: opacity .5s ease;
     }
     &__links {
         display: flex; // para deixar uma ao lado da outra

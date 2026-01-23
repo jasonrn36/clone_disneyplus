@@ -3,6 +3,9 @@
   top: 0;
   left: 0;
   z-index: 10;
+  background-color: #040714;
+  transition: background-color 0.5s ease;
+  align-items: center;
 }
 .header--is-hidden {
   background-color: transparent;
@@ -16,14 +19,16 @@
   visibility: hidden;
 }
 .header__container {
-  padding: 8px 36px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  padding: 2px;
 }
 .header__logo {
   max-width: 80px;
   width: 100%;
-  margin: 5px;
+  transition: opacity 0.5s ease;
 }
 .header__links {
   display: flex;
