@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
     window.addEventListener('scroll', function(){
         const posicaoAtual = window.scrollY;
-
+        if (posicaoAtual > alturaHero) {
+            console.log("exibe os elementos");
+        }
+    });
     
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function(botao){

@@ -2,7 +2,15 @@
 document.addEventListener('DOMContentLoaded', function(){
     const buttons = document.querySelectorAll('[data-tab-button]');
     const questions = document.querySelectorAll('[data-faq-question]');
+    const heroSection = document.querySelector('.hero');
+    const alturaHero = heroSection.clientHeight;
 
+    window.addEventListener('scroll', function(){
+        const posicaoAtual = window.scrollY;
+        if (posicaoAtual > alturaHero) {
+            console.log("exibe os elementos");
+        }
+    });
     
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function(botao){

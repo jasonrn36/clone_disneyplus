@@ -260,10 +260,6 @@
   padding: 14px;
 }
 
-.hidden {
-  visibility: hidden;
-}
-
 @font-face {
   font-family: Avenir;
   src: url(../../assets/Avenir\ Next\ LT\ Pro\.otf);
