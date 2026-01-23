@@ -244,11 +244,9 @@
 }
 .header__links {
   display: flex;
-  list-style: none;
 }
 .header__links__item {
   margin: 5px;
-  text-decoration: none;
 }
 
 @font-face {
@@ -260,6 +258,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Avenir, sans-serif;
+  list-style: none;
 }
 
 body {
@@ -342,6 +341,7 @@ body {
   border: none;
   padding: 8px 14px;
   text-decoration: none;
+  letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
