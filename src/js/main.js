@@ -7,10 +7,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
     window.addEventListener('scroll', function(){
         const posicaoAtual = window.scrollY;
-        if (posicaoAtual > alturaHero) {
-            console.log("exibe os elementos");
+        if (posicaoAtual < alturaHero) {
+            ocultarElementosDoHeader();
         }
-    });
+        else {
+            exibeElementosDoHeader();
+        }
+    })
     
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function(botao){
@@ -32,6 +35,18 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
 })
+
+// Função ocultar elementos do header
+function ocultarElementosDoHeader() {
+    const header = document.querySelector("header")
+    header.classList.add("header--is-hidden");
+}
+
+// Função exibe elementos do header
+function exibeElementosDoHeader() {
+    const header = document.querySelector("header")
+    header.classList.remove("header--is-hidden");
+}
 
 //Função abre ou Fecha resposta
 function abreOuFechaResposta(elemento) {

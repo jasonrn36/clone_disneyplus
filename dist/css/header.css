@@ -4,14 +4,14 @@
   left: 0;
   z-index: 10;
 }
-.header--is-hiden {
+.header--is-hidden {
   background-color: transparent;
 }
-.header--is-hiden .header__logo {
+.header--is-hidden .header__logo {
   opacity: 0;
   visibility: hidden;
 }
-.header--is-hiden .header__links__item:first-child {
+.header--is-hidden .header__links__item:first-child {
   opacity: 0;
   visibility: hidden;
 }
