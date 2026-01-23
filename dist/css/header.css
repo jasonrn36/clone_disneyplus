@@ -13,3 +13,7 @@
 .header__links__item {
   margin: 5px;
 }
+.header button {
+  height: 50px;
+  padding: 14px;
+}
