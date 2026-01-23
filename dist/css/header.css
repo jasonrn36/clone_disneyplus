@@ -4,6 +4,17 @@
   left: 0;
   z-index: 10;
 }
+.header--is-hiden {
+  background-color: transparent;
+}
+.header--is-hiden .header__logo {
+  opacity: 0;
+  visibility: hidden;
+}
+.header--is-hiden .header__links__item:first-child {
+  opacity: 0;
+  visibility: hidden;
+}
 .header__container {
   padding: 8px 36px;
   display: flex;

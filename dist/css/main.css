@@ -239,6 +239,17 @@
   left: 0;
   z-index: 10;
 }
+.header--is-hiden {
+  background-color: transparent;
+}
+.header--is-hiden .header__logo {
+  opacity: 0;
+  visibility: hidden;
+}
+.header--is-hiden .header__links__item:first-child {
+  opacity: 0;
+  visibility: hidden;
+}
 .header__container {
   padding: 8px 36px;
   display: flex;
@@ -344,9 +355,9 @@ body {
   width: 100%;
   height: 60px;
   color: #f9f9f9;
-  background-color: #6421ff;
+  background-color: transparent;
+  border: solid 2px #fff;
   border-radius: 9px;
-  border: solid 2px #6421ff;
   text-transform: uppercase;
   margin-top: 2vw;
   margin-bottom: 8px;
@@ -359,8 +370,8 @@ body {
 }
 
 .button:hover {
-  background-color: transparent;
-  border: solid 2px #fff;
+  background-color: #6421ff;
+  border: solid 2px #6421ff;
 }
 
 .button:active {
