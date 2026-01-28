@@ -77,6 +77,11 @@
   gap: 24px;
   list-style: none;
 }
+@media (min-width: 768px) {
+  .shows__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .shows__list--is-active {
   display: grid;
 }
@@ -290,6 +295,7 @@
 
 body {
   background-color: #040714;
+  overflow-x: hidden;
 }
 
 .hero {

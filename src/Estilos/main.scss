@@ -24,6 +24,7 @@
 
 body {
     background-color: colors.$corDeFundo;
+    overflow-x: hidden; //forçar o viewport a não ter escroll horizontal
 
 }
 

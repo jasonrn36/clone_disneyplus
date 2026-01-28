@@ -1,11 +1,9 @@
 @use 'colors';  // PARA FAZER USO CAS CORES NO CARQUIVOS colors use explemplo: colors.$corPrincipal
-//$hero: 'https://srv-estaticos.vercel.app/hero_desktop.jpeg';
-$hero: './Images/hero_desktop.jpeg';
-
+$hero: 'https://srv-estaticos.vercel.app/hero_desktop.jpeg';
+//$hero: '/Images/hero_desktop.jpeg';
 //$hero: '/dist/Images/fundo_rei_leao_celular.png';
 
 .hero {
-
     display: flex;
     position: relative;
     top: -10px;
