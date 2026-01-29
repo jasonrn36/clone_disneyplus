@@ -22,7 +22,7 @@
 }
 .hero__content__branding {
   max-width: 300px;
-  margin: 0 auto;
+  margin: 0 auto 38px;
 }
 .hero__content__combos {
   display: flex;
