@@ -11,10 +11,12 @@
 }
 @media (max-width: 767px) {
   .hero {
+    width: 100%;
     padding-top: 50vw;
     min-height: 80vw;
     background-image: url("../Images/hero_celular.jpeg");
     background-size: contain;
+    margin-top: -55px;
   }
 }
 .hero .button {
@@ -29,6 +31,11 @@
   margin-right: 0;
   margin-bottom: 0;
   margin-left: -20px;
+}
+@media (max-width: 767px) {
+  .hero__content {
+    padding-top: 150px;
+  }
 }
 .hero__content__branding {
   max-width: 300px;

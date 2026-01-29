@@ -38,6 +38,13 @@
   text-transform: uppercase;
   border: none;
   border-bottom: 5px solid transparent;
+}
+@media (max-width: 768px) {
+  .shows__tabs__button {
+    font-size: 16px;
+  }
+}
+.shows__tabs__button {
   cursor: pointer;
 }
 .shows__tabs__button--is-active {

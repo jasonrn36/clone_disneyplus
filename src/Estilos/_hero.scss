@@ -12,10 +12,12 @@
     background-position: center;
 
     @media (max-width: 767px) { // telas menores que 768px
+        width: 100%;
         padding-top: 50vw;
         min-height: 80vw;
         background-image: url('../Images/hero_celular.jpeg');
         background-size: contain; // PARA IMAGEM FICAR TODA NA TELA DO CELULAR
+        margin-top: -55px;
     }
 
     .button {
@@ -32,6 +34,11 @@
             margin-right: 0;
             margin-bottom: 0;
             margin-left: -20px;
+
+            @media (max-width: 767px) { // telas menores que 768px
+                padding-top: 150px;
+            }
+
         }
         &__content__branding {
             max-width: 300px;
@@ -40,6 +47,7 @@
             @media (max-width: 767px) { // telas menores que 768px
                 max-width: 180px;
             }
+
         }
         // Area de estilização dos combos
         &__content__combos { // Aqui é somente as ul e li

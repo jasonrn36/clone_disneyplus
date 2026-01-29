@@ -47,6 +47,10 @@
             border: none;
             border-bottom: 5px solid transparent;
 
+            @media (max-width: 768px) { //fonte 16px para telas menores
+                font-size: 16px;
+            }
+
             cursor: pointer;
             &--is-active {
             border-color: colors.$corTextoSecundaria;
