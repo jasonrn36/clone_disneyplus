@@ -11,7 +11,7 @@
 }
 @media (max-width: 767px) {
   .hero {
-    padding: 20vw;
+    padding-top: 50vw;
     min-height: 80vw;
     background-image: url("../Images/hero_celular.jpeg");
   }

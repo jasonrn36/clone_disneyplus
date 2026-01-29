@@ -1,7 +1,4 @@
 @use 'colors';  // PARA FAZER USO CAS CORES NO CARQUIVOS colors use explemplo: colors.$corPrincipal
-//$hero: 'https://srv-estaticos.vercel.app/hero_desktop.jpeg';
-//$hero: '/Images/hero_desktop.jpeg';
-//$hero: '/dist/Images/fundo_rei_leao_celular.png';
 
 .hero {
     display: flex;
@@ -15,9 +12,10 @@
     background-position: center;
 
     @media (max-width: 767px) { // telas menores que 768px
-        padding: 20vw;
+        padding-top: 50vw;
         min-height: 80vw;
         background-image: url('../Images/hero_celular.jpeg');
+        background-size: contain; // PARA IMAGEM FICAR TODA NA TELA DO CELULAR
     }
 
     .button {
