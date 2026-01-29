@@ -1,5 +1,5 @@
 @use 'colors';  // PARA FAZER USO CAS CORES NO CARQUIVOS colors use explemplo: colors.$corPrincipal
-$hero: 'https://srv-estaticos.vercel.app/hero_desktop.jpeg';
+//$hero: 'https://srv-estaticos.vercel.app/hero_desktop.jpeg';
 //$hero: '/Images/hero_desktop.jpeg';
 //$hero: '/dist/Images/fundo_rei_leao_celular.png';
 
@@ -10,7 +10,16 @@ $hero: 'https://srv-estaticos.vercel.app/hero_desktop.jpeg';
     background-repeat: no-repeat;
     padding: 10.5vw;
     min-height: 50vw; // ISSO CORTA A IMAGEM deixando meno dos lados e em cima
-    background-image: url("#{$hero}");
+    background-image: url('../Images/hero_desktop.jpeg');
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width: 767px) { // telas menores que 768px
+        padding: 20vw;
+        min-height: 80vw;
+        background-image: url('../Images/hero_celular.jpeg');
+    }
+
     .button {
         margin-top: 2vw;
         margin-bottom: 8px;
@@ -30,6 +39,9 @@ $hero: 'https://srv-estaticos.vercel.app/hero_desktop.jpeg';
             max-width: 300px;
             margin: 0 auto 38px;
 
+            @media (max-width: 767px) { // telas menores que 768px
+                max-width: 180px;
+            }
         }
         // Area de estilização dos combos
         &__content__combos { // Aqui é somente as ul e li
