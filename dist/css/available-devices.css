@@ -11,6 +11,11 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
+@media (max-width: 768px) {
+  .available-devices__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .available-devices__list li {
   list-style: none;
 }

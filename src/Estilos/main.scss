@@ -22,10 +22,10 @@
     list-style: none; // tira o marcador de lista
 }
 
-body {
+html, body {
     background-color: colors.$corDeFundo;
-    overflow-x: hidden; //forçar o viewport a não ter escroll horizontal
-
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .hero {
@@ -48,14 +48,24 @@ body {
     @include text(18px);
     color: aliceblue;
 
+    @media (max-width: 768px) { // telas menores que 768px
+            @include text(15px);
+    }
+
 }
 .text {
     @include text;
 
+            @media (max-width: 768px) { // telas menores que 768px
+            @include text(14px);
+    }
 }
 .text--small{
     @include text(12px);
 
+        @media (max-width: 768px) { // telas menores que 768px
+            @include text(11px);
+    }
     
 }
 
@@ -67,14 +77,24 @@ body {
 .title--big {
     @include title(44px);
 
+    @media (max-width: 768px) { // telas menores que 768px
+            @include title(26px)
+    }
 }
 
 .title {
     @include title;
 
+    @media (max-width: 768px) { // telas menores que 768px
+            @include title(24px)
+    }
 }
 .title--small {
     @include title(28px);
+
+        @media (max-width: 768px) { // telas menores que 768px
+            @include title(22px)
+    }
 
 }
 
@@ -133,9 +153,19 @@ body {
         grid-template-columns: 1fr 1fr;
         align-items: center;
 
+        @media (max-width: 767px) { // telas menores que 768px
+            display: block;
 
+        }
         &__text__container {
             padding: 0 2vw;
+
+        @media (max-width: 767px) { // telas menores que 768px
+            position: relative;
+            left: 0;
+            width: 100%;
+
+        }
 
             h2 {
                 margin-bottom: 24px;
@@ -144,6 +174,8 @@ body {
 
         img {
             max-width: 100%;
+            display: block;
+            height: auto;
         }
         
 
@@ -166,6 +198,13 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media (max-width: 767px) { // telas menores que 768px
+            position: relative;
+            left: 0;
+            width: 100%;
+
+        }
 
         }
 

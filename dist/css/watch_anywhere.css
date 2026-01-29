@@ -4,6 +4,11 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .watch_anywhere {
+    display: block;
+  }
+}
 .watch_anywhere img {
   max-width: 100%;
 }

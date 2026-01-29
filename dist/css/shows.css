@@ -10,9 +10,11 @@
   gap: 24px;
   list-style: none;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .shows__list {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: hidden;
+    width: 100%;
   }
 }
 .shows__list--is-active {
