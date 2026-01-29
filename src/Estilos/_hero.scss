@@ -47,9 +47,18 @@
             justify-content: space-between;
             list-style: none;
 
+            @media (max-width: 767px) { // telas menores que 768px
+                display: block;
+            }
+
         }
             &__item__combo { //    Aqui tenho o combo 01
                 width: calc(50% - 12px);
+
+                @media (max-width: 767px) { // telas menores que 768px
+                    width: 100%;
+                    margin-bottom: 24px;
+            }
 
                 .img_combo01 {
                     max-width: 50%;
