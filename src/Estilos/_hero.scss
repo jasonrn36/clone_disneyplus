@@ -12,13 +12,13 @@
     background-position: center;
 
     @media (max-width: 767px) { // telas menores que 768px
-        width: 100%;
-        padding-top: 50vh;
-        min-height: 0.80vh;
+        flex-direction: column;
         background-image: url('../Images/hero_celular.jpeg');
-            background-size: cover; // mostra a imagem inteira
-            background-repeat: no-repeat;
-            background-position: center;
+        padding-top: calc(50vw + 25px);
+        background-size: contain; // mostra a imagem inteira
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: -55px;
 
     }
 
