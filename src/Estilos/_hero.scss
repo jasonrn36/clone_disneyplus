@@ -12,11 +12,14 @@
     background-position: center;
 
     @media (max-width: 767px) { // telas menores que 768px
+        position: relative;
+        left: 8px;
         width: 100%;
         padding-top: 50vw;
         min-height: 80vw;
         background-image: url('../Images/hero_celular.jpeg');
         background-size: contain; // PARA IMAGEM FICAR TODA NA TELA DO CELULAR
+        background-position: center;
         margin-top: -55px;
     }
 
@@ -30,7 +33,7 @@
             max-width: 640px;
             position: relative;
             top: 0px;
-            margin-top: 0;
+            margin-top: 20px;
             margin-right: 0;
             margin-bottom: 0;
             margin-left: -20px;
