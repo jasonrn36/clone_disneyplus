@@ -13,11 +13,13 @@
 
     @media (max-width: 767px) { // telas menores que 768px
         width: 100%;
-        padding-top: 50vw;
-        min-height: 80vw;
+        padding-top: 50vh;
+        min-height: 0.80vh;
         background-image: url('../Images/hero_celular.jpeg');
-        background-size: contain; // PARA IMAGEM FICAR TODA NA TELA DO CELULAR
-        margin-top: -55px;
+            background-size: cover; // mostra a imagem inteira
+            background-repeat: no-repeat;
+            background-position: center;
+
     }
 
     .button {
@@ -30,7 +32,7 @@
             max-width: 640px;
             position: relative;
             top: 0px;
-            margin-top: 0;
+            margin-top: 55px;
             margin-right: 0;
             margin-bottom: 0;
             margin-left: -20px;
@@ -63,9 +65,9 @@
             &__item__combo { //    Aqui tenho o combo 01
                 width: calc(50% - 12px);
 
-                @media (max-width: 767px) { // telas menores que 768px
-                    width: 100%;
-                    margin-bottom: 24px;
+            @media (max-width: 767px) { // telas menores que 768px
+                width: 100%;
+                display: block;
             }
 
                 .img_combo01 {

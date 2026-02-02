@@ -12,11 +12,12 @@
 @media (max-width: 767px) {
   .hero {
     width: 100%;
-    padding-top: 50vw;
-    min-height: 80vw;
+    padding-top: 50vh;
+    min-height: 0.8vh;
     background-image: url("../Images/hero_celular.jpeg");
-    background-size: contain;
-    margin-top: -55px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 .hero .button {
@@ -27,7 +28,7 @@
   max-width: 640px;
   position: relative;
   top: 0px;
-  margin-top: 0;
+  margin-top: 55px;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: -20px;
@@ -62,7 +63,7 @@
 @media (max-width: 767px) {
   .hero__item__combo {
     width: 100%;
-    margin-bottom: 24px;
+    display: block;
   }
 }
 .hero__item__combo .img_combo01 {
